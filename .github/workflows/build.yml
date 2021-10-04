@@ -8,8 +8,8 @@ on:
 
 env:
   POSTGRESQL_VERSION: 13.1
-  POSTGRESQL_DB: ebdb
-  POSTGRESQL_USER: students
+  POSTGRESQL_DB: students
+  POSTGRESQL_USER: postgres
   POSTGRESQL_PASSWORD: password
   JAVA_VERSION: 1.15
 
@@ -34,4 +34,4 @@ jobs:
       - name: Maven Clean Package
         run: |
           ./mvnw --no-transfer-progress clean package -P build-frontend
-          
+
